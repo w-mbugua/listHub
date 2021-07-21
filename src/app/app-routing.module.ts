@@ -2,6 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { AccountComponent } from './account/account.component';
+import { CreateListingComponent } from './create-listing/create-listing.component';
 import { EditListingComponent } from './edit-listing/edit-listing.component';
 import { EditPhotoComponent } from './edit-photo/edit-photo.component';
 import { FeaturesComponent } from './features/features.component';
@@ -32,6 +33,7 @@ const routes: Routes = [
 { path: 'about', component: AboutComponent },
 { path: 'support', component: SupportComponent },
 { path: 'listings', component: ListingsComponent },
+{ path: 'add', component: CreateListingComponent },
 { path: 'listing/:id', component: ListingDetailsComponent },
 { path: 'listing/edit', component: EditListingComponent },
 { path: 'listing/preview', component: PreviewListingComponent },
