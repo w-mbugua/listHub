@@ -1,13 +1,14 @@
-<form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
-    <h3 class="text-center text-primary">Login</h3>
-    <div class="form-group">
-        <label for="username">Username:</label>
-        <input #username="ngModel" type="text" ngModel name="username" required class="form-control">
-        <span class="text-danger" *ngIf="username.touched && !username.valid">enter username</span>
-    </div>
-    <div class="form-group">
-        <label for="password">Password:</label>
-        <input #password type="password" [ngModel]="password" name="password" required minlength="3" class="form-control">
-    </div>
-    <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Sign In</button>
-</form>
+<div *ngIf="!_appAuthService.loggedInUser">
+    <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+        <h3 class="text-center text-primary">Login</h3>
+        <label>
+            First Name:
+            <input type="text" formControlName="firstName">
+        </label>
+        <label>
+            Last Name:
+            <input type="text" formControlName="lastName">
+        </label>
+        <button class="btn btn-primary">Sign In</button>
+    </form>
+</div>

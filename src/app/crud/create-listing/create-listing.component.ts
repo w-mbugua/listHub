@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { DbOperationsService } from 'src/app/db-operations.service';
+import { DbOperationsService } from 'src/app/services/db-operations.service';
 import { Listing } from 'src/app/models/listing';
 
 @Component({

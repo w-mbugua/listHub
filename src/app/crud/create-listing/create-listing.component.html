@@ -10,19 +10,19 @@
   <form #listingForm="ngForm" (ngSubmit)="addNewList(listingForm)">
     <div class="form-group">
       <label for="title">Enter Listing Title</label>
-      <input type="text" ngModel #title="ngModel" name="title" class="form-control" placeholder="Enter title" />
+      <input appOnFocusBlur type="text" ngModel #title="ngModel" name="title" class="form-control" placeholder="Enter title" />
     </div>
     <div class="form-group">
       <label for="price">Enter Description</label>
-      <input type="text" #description="ngModel" ngModel name="description" class="form-control" placeholder="Enter Description" />
+      <input appOnFocusBlur type="text" #description="ngModel" ngModel name="description" class="form-control" placeholder="Enter Description" />
     </div>
     <div class="form-group">
       <label for="price">Enter Price</label>
-      <input type="number" #price="ngModel" ngModel name="price" class="form-control" placeholder="Enter price here"/>
+      <input appOnFocusBlur type="number" #price="ngModel" ngModel name="price" class="form-control" placeholder="Enter price here"/>
     </div>
     <div class="form-group form-check">
       <input type="checkbox" #status="ngModel" ngModel name="status" class="form-check-input" />
-      <label class="form-check-label" for="status">Active?</label>
+      <label appOnFocusBlur class="form-check-label" for="status">Active?</label>
     </div>
     <button type="submit" class="btn btn-primary">Add New Listing</button>
   </form>

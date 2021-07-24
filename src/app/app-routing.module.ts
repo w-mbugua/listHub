@@ -1,7 +1,7 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './about/about.component';
-import { AccountComponent } from './account/account.component';
+import { AutoListComponent } from './auto-list/auto-list.component';
+
 import { AddcomentComponent } from './comments/addcoment/addcoment.component';
 import { DeletecommentComponent } from './comments/deletecomment/deletecomment.component';
 import { EditcomentComponent } from './comments/editcoment/editcoment.component';
@@ -10,9 +10,7 @@ import { CreateListingComponent } from './crud/create-listing/create-listing.com
 import { DeleteListingComponent } from './crud/delete-listing/delete-listing.component';
 import { UpdateListingComponent } from './crud/update-listing/update-listing.component';
 import { ViewListingComponent } from './crud/view-listing/view-listing.component';
-import { EditListingComponent } from './edit-listing/edit-listing.component';
-import { EditPhotoComponent } from './edit-photo/edit-photo.component';
-import { FeaturesComponent } from './features/features.component';
+
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -29,7 +27,7 @@ const routes: Routes = [
 { path:'view-listing', component:ViewListingComponent },
 { path:'delete-listing/:id', component:DeleteListingComponent},
 {path:'update-listing/:id', component:UpdateListingComponent},
-
+{path: 'validate', component: AutoListComponent},
 { path:'add-comment', component:AddcomentComponent },
 { path:'view-comment', component:ViewcomentComponent },
 { path:'delete-comment/:id', component:DeletecommentComponent},

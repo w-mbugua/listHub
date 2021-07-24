@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Listing } from 'src/app/models/listing';
 import { ActivatedRoute } from '@angular/router';
-import { DbOperationsService } from 'src/app/db-operations.service';
+import { DbOperationsService } from 'src/app/services/db-operations.service';
 
 @Component({
   selector: 'app-update-listing',
