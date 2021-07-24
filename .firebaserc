@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "listing-b1835": {
+      "hosting": {
+        "listHub": [
+          "listing-b1835"
+        ]
+      }
+    }
+  }
+}

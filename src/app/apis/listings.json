@@ -1,0 +1,58 @@
+{
+  "listings": [
+    {
+      "id": 1,
+      "title": "Sunset in Nairobi",
+      "price": "190",
+      "status": "Active"
+    },
+    {
+      "id": 2,
+      "title": "Dawn at Mombasa",
+      "price": "150",
+      "status": "Inactive"
+    },
+    {
+      "id": 3,
+      "title": "Evening in Kigali",
+      "price": "200",
+      "status": "Inactive"
+    },
+    {
+      "userId": 1,
+      "id": 152,
+      "status": "VALID"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "andrew",
+      "userEmail": "andrew@localhost.com"
+    },
+    {
+      "id": 2,
+      "username": "stacy",
+      "userEmail": "stacy@localhost.com"
+    },
+    {
+      "id": 3,
+      "username": "linda",
+      "userEmail": "linda@localhost.com"
+    }
+  ],
+  "cities": [
+    {
+      "id": 1,
+      "name": "Nairobi"
+    },
+    {
+      "id": 2,
+      "name": "Mombasa"
+    },
+    {
+      "id": 3,
+      "name": "Kigali"
+    }
+  ]
+}
